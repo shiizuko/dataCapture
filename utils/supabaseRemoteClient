@@ -1,0 +1,6 @@
+import { createClient } from '@supabase/supabase-js';
+
+
+const supabaseRemote = createClient(process.env.NEXT_PUBLIC_SUPABASE_REMOTE_URL, process.env.NEXT_PUBLIC_SUPABASE_REMOTE_ANON_KEY);
+
+export default supabaseRemote;
